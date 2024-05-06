@@ -1,6 +1,5 @@
 # DiabDetect-ML-project-2
-Name: DiabDetect
-DiabDetect is an application designed to assist in the detection of diabetes based on various patient features like age, glucose, BMI, etc
+Name: DiabDetect is an application designed to assist in the detection of diabetes based on various patient features like age, glucose, BMI, etc
 
 Features:
 Main Page: Users are greeted with a welcome message and prompted to upload a CSV file containing patient data.
