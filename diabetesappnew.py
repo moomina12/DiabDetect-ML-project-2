@@ -4,7 +4,6 @@ import pandas as pd
 import streamlit as st
 from pickle import load
 from PIL import Image
-import treeinterpreter
 import matplotlib.pyplot as plt
 import seaborn as sns
 
