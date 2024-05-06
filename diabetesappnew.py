@@ -2,10 +2,8 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-from pickle import load
-from PIL import Image
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+
 
 def main():
     
