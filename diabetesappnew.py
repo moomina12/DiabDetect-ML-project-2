@@ -66,7 +66,7 @@ if __name__ == "__main__":
     #st.image("image2.jpg")
 
 # Load the Random Forest CLassifier model
-model = load(open("diabetespredictionrfcmodelnew.pkl", 'rb'))
+model = load(open("diabetespredictionxgbmodel.pkl", 'rb'))
 #with below code tried to change the background color of sidebar in streamlit but it was unsuccessful
 #st.markdown("<style>.sidebar .sidebar-content { background-color: #fffff; }</style>", unsafe_allow_html=True)
 
