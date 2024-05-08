@@ -59,10 +59,9 @@ if __name__ == "__main__":
     main()"""
 
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image("Diabeticsmart.jpeg")
-
+col1, col2 = st.columns(2)
+with col1:
+    st.image("Diabeticsmart.jpeg")
 #with col2:
     #st.image("image2.jpg")
 
