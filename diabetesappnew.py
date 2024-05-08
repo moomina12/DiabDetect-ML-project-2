@@ -14,7 +14,7 @@ with col1:
     #st.image("image2.jpg")
 
 # Load the Random Forest CLassifier model
-model = load(open("diabetespredictionxgbmodel.pkl", 'rb'))
+model = load(open("diabetespredictionRFbmodel.pkl", 'rb'))
 #with below code tried to change the background color of sidebar in streamlit but it was unsuccessful
 #st.markdown("<style>.sidebar .sidebar-content { background-color: #fffff; }</style>", unsafe_allow_html=True)
 
@@ -47,7 +47,7 @@ def detect(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age):
 
 if st.button('DetectDiabetes'):
     prediction = detect(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age)
-    if prediction >= 0.50:
+    if prediction == 1:
         prediction_text = f'<span style = "font-size:30px; color:#FFD700;">The person is diabetic</span>' 
         #prediction_text = f'<span style = "font-size:30px; color:#FFD700;">The person is diabetic - ${prediction:.2f}</span>' if we went to display the outcome or value
         st.write(prediction_text, unsafe_allow_html = True)
