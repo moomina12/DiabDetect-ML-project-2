@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-def main():
+"""def main():
     
     st.sidebar.title("Welcome to DiabeticSmart- an Application to detect Diabetes")
     #st.title("Welcome to DiabeticSmart- an Application to detect Diabetes")
@@ -56,7 +56,7 @@ def main():
             st.pyplot(fig)
 
 if __name__ == "__main__":
-    main()
+    main()"""
 
 
     col1, col2 = st.columns(2)
