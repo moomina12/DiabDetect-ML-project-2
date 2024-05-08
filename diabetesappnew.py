@@ -40,13 +40,13 @@ DPF = st.number_input('DPF(DiabetesPedigreeFunction)', min_value=0.000, max_valu
 #DPF=st.slider('DPF',0.000,1.000,format="%.3f")
 Age = st.slider('Age', 0, 100, 25)
 
-def predict(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age):
+def detect(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age):
     features = np.array([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age]).reshape(1, -1)
     prediction = model.predict(features)[0]
     return prediction
 
-if st.button('Predict'):
-    prediction = predict(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age)
+if st.button('DetectDiabetes'):
+    prediction = detect(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DPF,Age)
     if prediction >= 0.50:
         prediction_text = f'<span style = "font-size:30px; color:#FFD700;">The person is diabetic</span>' 
         #prediction_text = f'<span style = "font-size:30px; color:#FFD700;">The person is diabetic - ${prediction:.2f}</span>' if we went to display the outcome or value
