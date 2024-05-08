@@ -12,7 +12,7 @@ def main():
     st.sidebar.title("Welcome to DiabeticSmart- an Application to detect Diabetes")
     #st.title("Welcome to DiabeticSmart- an Application to detect Diabetes")
     #st.sidebar.header("Upload your CSV data file")
-    data_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+    #data_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
     #data_file = st.file_uploader("Upload CSV", type=["csv"])
 
     if data_file is not None:
