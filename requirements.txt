@@ -1,4 +1,5 @@
 matplotlib==3.8.0
 seaborn==0.13.2
 treeinterpreter==0.2.3
+scikit-learn==1.2.2
 
