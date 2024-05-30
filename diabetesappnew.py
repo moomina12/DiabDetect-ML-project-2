@@ -5,7 +5,6 @@ import streamlit as st
 from pickle import load
 import matplotlib.pyplot as plt
 import seaborn as sns
-import Image
 
 st.sidebar.title("Welcome to DiabeticSmart- an Application to detect Diabetes")
 col1, col2 = st.columns(2)
